@@ -1,0 +1,291 @@
+html{
+    scroll-behavior: smooth;
+    background-color: rgba(19, 15, 15, 0.5);
+}
+
+ /*  Styling the header  */
+#home{
+    width: 100%;
+    height: 120vh;            
+    background-image: url(Images/workpicture.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;           
+    z-index: 1;
+}
+nav p{
+    letter-spacing: 5px;
+    font-family: Imprint MT Shadow;
+    font-size: 2.7vw !important;
+    color: rgb(222, 184, 135);
+    margin: 0;
+    padding: 0;              
+}
+#major_nav button{
+    border: 3px solid rgb(245, 245, 245);
+}
+.nav-hr{
+    color: #fff; 
+    width: 18px; 
+    position: relative;
+    height: 1px;
+    background-color: #fff;
+}         
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-inline-start: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+nav ul li a:hover{
+    color: rgb(222, 184, 135);
+    text-decoration: none;
+    transition: 0s;
+}
+nav ul li a:active, nav ul li a.active{
+    color: rgb(222, 184, 135);
+}
+nav.changeColor{
+    background-color: rgb(37, 36, 36);
+    transition: 2s;
+}
+
+/*  styling the home body section   */
+#headsection{
+    background-color: rgba(19, 15, 15, 0.8);
+    height: 120vh;
+    opacity: 0.9;
+    padding: 33vh 0px 33vh 13%;  
+    color: aliceblue;             
+}
+#headsection h3{
+    font-family: pristina;
+    font-size: 2.8vw;
+}
+#headsection p{
+    font-size: 7vw;
+    font-family: Lucida Fax;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#headsection h2{
+    font-family: Times New Roman;
+    font-size: 2.8vw;
+}
+#headsection a{
+    color: rgb(222, 184, 135);
+    border: 2px solid rgb(222, 184, 135);
+    padding: 9px 35px;
+    border-radius: 24px;
+    font-weight: bold;
+}
+#headsection a:hover{
+    background-color: rgb(222, 184, 135);
+    color: white;
+    transition: 1s;
+}
+
+/*  styling the about section   */
+#about{
+    padding-inline: 8%;
+    background-color: rgb(211, 207, 207);             
+}
+#about h1{
+    color: rgb(222, 184, 135);               
+}
+#about p{
+    color: rgba(19, 15, 15);
+    font-size: 20px;
+}
+
+/*  styling the services section    */
+#services{                
+    background-color: rgba(19, 15, 15, 0.5);               
+}
+#servicerow{
+    padding-inline: 6%;
+}
+.servicebox{
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px;
+    height: 350px;
+    border: 4px solid rgb(222, 184, 135, 0.6);
+}
+#services i{
+    font-size: 50px;
+    color: rgb(222, 184, 135);
+}
+#services h4{
+    color: rgb(47, 45, 36);
+}
+#services h6{
+    color: rgba(19, 15, 15, 0.5);
+    font-family: candara;
+    font-weight: bold;
+}
+
+/*  styling the skills section  */
+.skillbox{
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 5px rgb(222, 184, 135);
+    width: 100%;
+}
+#skills i{
+    font-size: 90px;
+}
+.fa-bootstrap{
+    color: rgb(138, 43, 226);
+}
+
+/*  styling the portfolio section  */
+#portfolio{
+    padding-inline: 5%;
+    background-image: linear-gradient(to bottom right, rgba(19, 15, 15, 0.6), rgb(245, 245, 245), rgb(222, 184, 135));
+}
+.portfoliobox{
+    position: relative;
+    margin-bottom: 20px;
+}
+.portfoliobox img{
+    border-radius: 10px;
+    height: 50vh;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.portfoliobox:hover img{
+    opacity: 0.7;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+.port_inner {
+    transition: .8s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.portfoliobox:hover .port_inner{
+    opacity: 0.9;
+}      
+.port_inner2 {
+    color: rgb(255, 254, 254);
+    font-size: 16px;
+    opacity: 20;
+}
+
+/*  styling the contact section */
+#contact img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 90%;
+}
+#contact input{
+    height: 45px;
+    background-color: rgb(222, 184, 135);
+}
+#contact textarea{
+    height: 120px;
+    background-color: rgb(222, 184, 135);
+}
+#contact button{
+    color: rgb(222, 184, 135);
+    border: 2px solid rgb(222, 184, 135);
+    padding: 9px 35px;
+    border-radius: 24px;
+    font-weight: bold;
+}
+#contact button:hover{
+    background-color: rgb(222, 184, 135);
+    color: white;
+    transition: 1s;
+}
+#contact i{
+    color: rgb(222, 184, 135);
+    font-size: 35px;
+    padding-inline: 2.3vw;
+}
+
+/*   styling the footer */
+#footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(37, 36, 36);
+    padding: 30px 3% 27px;
+    color: rgb(245, 245, 245);
+    font-size: 15px;
+    font-weight: 500;
+}
+#footer p{
+    margin-bottom: 3px;
+}
+#footer span{
+    color: rgb(222, 184, 135);
+}
+
+/*  responsive layout with css   */
+@media (width <= 767px){
+    nav{
+        background-color: rgba(19, 15, 15);
+    }
+    #contact img{
+        display: none;
+    }
+    #footer{
+        display: block;
+        text-align: center;
+    }
+}
+@media (width <= 577px){
+    nav p{
+        font-size: 20px !important;
+    }
+    #headsection{
+        padding: 33vh 0px 33vh 4%; 
+    }
+    #headsection h3{
+        font-size: 20px;
+    }
+    #headsection p{
+        font-size: 11vw;
+    }
+    #headsection h2{
+        font-size: 23px;
+    }
+    .servicebox{
+        height: 250px;
+    }
+    #contact i{
+        font-size: 25px;
+        padding-inline: 4vw;
+    }
+    #footer{
+        padding-inline: 0;
+        font-size: 13px;
+    }
+}
+@media (width <= 428px){
+    #home,
+    #headsection{
+        height: 100vh; 
+    } 
+    #headsection h2{
+        font-size: 18px;
+    }
+    .servicebox{
+        height: 300px;
+    }
+    #footer{
+        font-size: 10px;
+    }             
+}
