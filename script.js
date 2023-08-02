@@ -8,9 +8,11 @@ $(window).scroll(function(){
     }
 });
 
+
 // maintains the active color when clicked on and when scrolled upon 
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".section");
+
 let liveSection = "home";
 window.addEventListener("scroll", () => {
     sections.forEach(section => {
@@ -26,22 +28,6 @@ window.addEventListener("scroll", () => {
     });
 });
 
- /* let sections = document.querySelectorAll(".section");
- let navlinks = document.querySelectorAll(".nav-link");
- window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute("id");
-        if(top >= offset && top < offset + height){
-            navlinks.forEach(links => {
-                links.classList.remove("active");
-                document.querySelector("nav-link [href*=" + id + "]").classList.add("active");
-            });
-        };
-    });
- };*/
 
 //  Gives the font awesome links a tooltip when hovered
 $(document).ready(function(){
