@@ -146,7 +146,7 @@ nav.changeColor{
 }
 
 /*  styling the portfolio section  */
-#portfolio{
+#portfolios{
     padding-inline: 5%;
     background-image: linear-gradient(to bottom right, rgba(19, 15, 15, 0.6), rgb(245, 245, 245), rgb(222, 184, 135));
 }
@@ -264,6 +264,9 @@ nav.changeColor{
     }
     .servicebox{
         height: 250px;
+    }
+    .portfoliobox img{
+        height: 35vh;
     }
     #contact i{
         font-size: 25px;
