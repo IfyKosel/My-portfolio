@@ -60,7 +60,7 @@ nav.changeColor{
 
 /*  styling the home body section   */
 @font-face {
-    font-family: "Pristina";
+    font-family: Pristina;
     src: url("https://fontsforyou.com/fonts/p/Pristina.ttf");
 }
 #headsection{
@@ -71,7 +71,7 @@ nav.changeColor{
     color: aliceblue;             
 }
 #headsection h3{
-    font-family: "Pristina";
+    font-family: Pristina;
     font-size: 2.8vw;
 }
 #headsection p{
