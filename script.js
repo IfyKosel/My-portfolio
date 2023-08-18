@@ -29,6 +29,21 @@ window.addEventListener("scroll", () => {
 });
 
 
+//  the animation in the service section
+const anime = document.querySelectorAll(".servicebox");
+window.addEventListener("scroll", animeSlide);
+animeSlide();
+function animeSlide(){
+    const timeIn = window.innerHeight;
+    anime.forEach(slide => {
+        const boxTop = slide.getBoundingClientRect().top;
+        if (boxTop < timeIn){
+            slide.classList.add("show");
+        }
+    });
+}
+
+
 //  Gives the font awesome links a tooltip when hovered
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
