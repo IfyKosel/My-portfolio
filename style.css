@@ -164,12 +164,20 @@ nav.changeColor{
 
 /*  styling the skills section  */
 .skillbox{
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px 5px rgb(222, 184, 135);
-    width: 100%;
+    border-radius: 15px;
+    width: 85%;
+    border-radius: 40px;
+    background: #eeeaea;
+    box-shadow:  5px 5px 37px rgb(222, 184, 135, 0.7),
+                -5px -5px 37px #ffffff;
+}
+.skillbox:hover{
+    width: 95%;
+    height: 90%;
+    transition: 0.5s ease;
 }
 #skills i{
-    font-size: 90px;
+    font-size: 70px;
 }
 .fa-bootstrap{
     color: rgb(138, 43, 226);
