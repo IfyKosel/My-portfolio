@@ -292,7 +292,7 @@ nav.changeColor{
     }
 }
 @media (width <= 577px){
-    nav p{
+    #brand_name{
         font-size: 20px !important;
     }
     #headsection{
