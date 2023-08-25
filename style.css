@@ -65,18 +65,37 @@ nav.changeColor{
     height: 120vh;
     opacity: 0.9;
     padding: 33vh 0px 33vh 13%;  
-    color: aliceblue;             
+    color: rgb(240, 248, 255);             
 }
 #headsection h3{
     font-family: 'Cookie', cursive;
     font-size: 3.4vw;
     letter-spacing: 1px;
 }
-#headsection p{
+.nameEffect{
     font-size: 7.5vw;
     font-family: 'Noto Serif Vithkuqi', serif;
     font-weight: bold;
+    letter-spacing: 2px;
     margin-bottom: 0;
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(14),
+                cursor .8s infinite;
+}
+@keyframes cursor{
+    50%, 100% {
+        border-color: white;
+    }
+}
+@keyframes typing {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 75%; 
+    }
 }
 #headsection h2{
     font-family: Times New Roman;
@@ -112,6 +131,10 @@ nav.changeColor{
 }
 #layer:hover{
     width: 100%;
+}
+#about_inner{
+    margin-inline: auto;
+    width: 73vw;
 }
 #about h1{
     color: rgb(222, 184, 135);               
@@ -176,8 +199,6 @@ nav.changeColor{
     box-shadow: 20px 20px 60px #cac7c7, -20px -20px 60px #ffffff;
 }
 .skillbox:hover{
-    width: 95%;
-    height: 90%;
     box-shadow: 10px 10px 20px #cac7c7, -10px -10px 20px #ffffff;
 }
 #skills i{

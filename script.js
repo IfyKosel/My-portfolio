@@ -8,7 +8,6 @@ $(window).scroll(function(){
     }
 });
 
-
 // maintains the active color when clicked on and when scrolled upon 
 const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".section");
